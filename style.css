@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+}
+
+.test {
+  background-color: blue;
+}
+
+.name {
+  grid-area: header;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.795);
+  letter-spacing: 2px;
+  font-size: 100px;
+  line-height: 100px;
+  padding: 100px;
+}
+
+.description {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.795);
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-top: 75px;
+  margin-right: 500px;
+  line-height: 100px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
