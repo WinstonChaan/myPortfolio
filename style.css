@@ -5,7 +5,7 @@
 * {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.795);
+  color: white;
   letter-spacing: 2px;
   font-size: 20px;
 }
@@ -20,35 +20,25 @@ main {
   position: absolute;
 }
 
-.test {
-  background-color: blue;
-}
-
 .name {
   grid-area: header;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.795);
   letter-spacing: 2px;
   font-size: 100px;
   line-height: 100px;
+  padding-right: 800px;
 }
 
-.description {
+.aboutMe {
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.795);
   letter-spacing: 2px;
   font-size: 20px;
-  margin-top: 75px;
-  margin-right: 500px;
+  margin-top: 7rem;
   line-height: 50px;
   padding: 20px;
+  margin-right: 4rem;
   text-align: center;
-  background: rgba(50, 50, 50, 0.5);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-}
-
-.navbarmain {
-  background: rgba(50, 50, 50, 0.5);
-  backdrop-filter: blur(5px);
+  background: rgba(100, 100, 100, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
