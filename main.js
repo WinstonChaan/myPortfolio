@@ -10,25 +10,20 @@ const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.1,
-  10000
+  20000
 );
 
 const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector("#bg"),
 });
 
-var rendererr = new THREE.WebGLRenderer({ alpha: true });
-renderer.setClearColor(0x35363a); // the default
-
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(30);
-
 renderer.render(scene, camera);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const geometry = new THREE.OctahedronGeometry(15, 1);
+const geometry = new THREE.OctahedronGeometry(20, 1);
 const material = new THREE.MeshBasicMaterial({
   color: 0xffffff,
   wireframe: true,
@@ -36,6 +31,7 @@ const material = new THREE.MeshBasicMaterial({
 const center = new THREE.Mesh(geometry, material);
 
 scene.add(center);
+center.position.setZ(-50);
 
 function addstars() {
   const geometry = new THREE.OctahedronGeometry(200, 1);
@@ -56,10 +52,8 @@ function addstars() {
 Array(300).fill().forEach(addstars);
 
 function moveCamera() {
-  const r = document.body.getBoundingClientRect().top;
-
-  camera.position.x = r * -0.01;
-  camera.position.y = r * -0.01;
+  const r = document.body.getBoundingClientRect().bottom;
+  console.log(r);
   camera.position.z = r * -0.01;
 }
 
@@ -68,8 +62,6 @@ document.body.onscroll = moveCamera;
 function animate() {
   requestAnimationFrame(animate);
 
-  scene.rotation.x += 0.0001;
-  scene.rotation.y += 0.0001;
   scene.rotation.z += 0.0001;
 
   center.rotation.x += 0.001;
