@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="address-card-regular.svg" rel="icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Winston Chan Portfolio</title>
   </head>
-  <body>
+  <body class="max-w-full overflow-x-hidden">
     <canvas id="bg"></canvas>
     <main>
       <!-- TAILWIND NAVBAR -->
@@ -62,14 +59,14 @@
               </div>
               <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                 <a
-                  href="#"
+                  href="#aboutMeID"
                   class="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                  aria-current="page"
-                  >About</a
                 >
+                  About
+                </a>
                 <a
                   href="#"
-                  class="hover:bg-gray-700px-3 py-2 rounded-md text-sm font-medium"
+                  class="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                   >Projects</a
                 >
                 <a
@@ -123,26 +120,36 @@
       </nav>
 
       <!-- mine -->
+      <h1 class="pt-14 pl-16">Hi i'm</h1>
       <div class="flex">
-        <h1 class="name pl-16 pt-16">Winston <br />Chan</h1>
-        <h1 class="aboutMe">
-          About Me <br />
-          Hi! This is my personal portfolio I designed using a mixture of
-          Tailwind, JavaScript, and Threejs. Im a Senior at University at
-          Buffalo studing cognitive science. My passions are creating website
-          applications and fitness. After I graduate I hope to pursure software
-          devlopement full time.
-        </h1>
+        <h1 class="name pl-16 pt-2">Winston <br />Chan</h1>
       </div>
       <div>
-        <h1 class="pl-16 pt-20 text-2xl">
+        <h1 class="pl-16 pt-80 text-2xl">
           Software Engineer and Full Stack Developer<br />
         </h1>
         <h2 class="pl-16 text-lg">
           JavaScript, Tailwind, CSS, HTML, FireBase, React
         </h2>
       </div>
+      <div id="aboutMeID" class="aboutMe">
+        <h1>
+          About Me <br />
+          Hi! This is my personal portfolio I designed using a mixture of
+          Tailwind, JavaScript, and Three js. Im currently a Senior studying
+          cognitive science. During my free time I like to create website
+          applications and participate in fitness. After I graduate I hope to
+          pursue software development full time.
+        </h1>
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
+<script type="text/javascript">
+  const scrollToBottom = (url) => {
+    const element = document.getElementById(url);
+    element.scrollTop = element.scrollHeight;
+  };
+</script>
