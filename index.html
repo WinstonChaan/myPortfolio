@@ -25,36 +25,6 @@
                   aria-expanded="false"
                 >
                   <span class="sr-only">Open main menu</span>
-                  <svg
-                    class="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                  <svg
-                    class="hidden h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
                 </button>
               </div>
               <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
@@ -65,7 +35,7 @@
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#projectListID"
                   class="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                   >Projects</a
                 >
@@ -90,33 +60,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="md:hidden" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#"
-              class="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-              aria-current="page"
-              >Dashboard</a
-            >
-            <a
-              href="#"
-              class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >Team</a
-            >
-            <a
-              href="#"
-              class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >Projects</a
-            >
-            <a
-              href="#"
-              class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              >Calendar</a
-            >
-          </div>
-        </div>
       </nav>
 
       <!-- mine -->
@@ -133,14 +76,49 @@
         </h2>
       </div>
       <div id="aboutMeID" class="aboutMe">
-        <h1>
-          About Me <br />
+        <h1 class="text-3xl text-left pb-3">About Me</h1>
+        <h3 class="text-left">
           Hi! This is my personal portfolio I designed using a mixture of
-          Tailwind, JavaScript, and Three js. Im currently a Senior studying
+          Three.js, Tailwind and JavaScript. Im currently a Senior studying
           cognitive science. During my free time I like to create website
           applications and participate in fitness. After I graduate I hope to
           pursue software development full time.
-        </h1>
+        </h3>
+      </div>
+      <div id="projectsID" class="projects inline-block">
+        <h1 class="text-3xl text-left pb-5">Projects</h1>
+        <a href="https://github.com/WinstonChaan" class="text-lg">
+          GitHub: https://github.com/WinstonChaan</a
+        >
+        These are some of the projects I've built on the side. My priorities
+        when choosing a project is being able to find something that I could
+        implement in my life. I like creating projects that have actual purpose
+        and something I could use on the day-to-day. As a result I can
+        experience the application from a users perspective and implement
+        features I think are lacking. These projects have been a good
+        opportunity for me to learn the several stacks out there as well as push
+        my limits while creating something fun and interactive!
+      </div>
+      <div id="projectListID" class="projectList float-right">
+        <div class="todo">
+          <h1 class="text-center pt-3">Live To Do List</h1>
+          <a href="https://livetodolist-66f7e.web.app/">
+            <img
+              class="object-contain w-full h-full p-7"
+              src="Screen Shot 2022-06-10 at 7.32.47 PM.png"
+              href
+            />
+          </a>
+        </div>
+        <div class="messenger float-right">
+          <h1 class="text-center pt-3">Live Messenger</h1>
+          <a href="https://message-ccea8.web.app/">
+            <img
+              class="object-contain w-full h-full p-7"
+              src="Screen Shot 2022-06-10 at 7.58.00 PM.png"
+            />
+          </a>
+        </div>
       </div>
     </main>
     <script type="module" src="/main.js"></script>
