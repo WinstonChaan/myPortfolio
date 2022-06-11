@@ -17,8 +17,18 @@ const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector("#bg"),
 });
 
+window.addEventListener("resize", onWindowResize, false);
+
+function onWindowResize() {
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+}
+
+onWindowResize();
+
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.render(scene, camera);
 renderer.setClearColor(0x3670c7, 1);
 
