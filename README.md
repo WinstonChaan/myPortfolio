@@ -1,1 +1,1 @@
-Personal Portfolio created using Tailwind and Three js
+Personal Portfolio created using React Firebase Tailwind and Three js
