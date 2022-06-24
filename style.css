@@ -72,6 +72,14 @@ main {
 .messenger {
   color: black;
   background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+
+.password {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
   border-radius: 20px;
 }
 
