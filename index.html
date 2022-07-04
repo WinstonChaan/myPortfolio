@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/8fa0ad5d98.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link href="address-card-regular.svg" rel="icon" />
@@ -27,6 +31,8 @@
                   <span class="sr-only">Open main menu</span>
                 </button>
               </div>
+
+              <!-- NAVBAR DESKTOP -->
               <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                 <a
                   href="#aboutMeID"
@@ -44,11 +50,11 @@
                   class="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                   >Work Experience</a
                 >
-                <!-- <a
-                  href="#"
+                <a
+                  href="#socialsID"
                   class="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                  >Contact Me</a
-                > -->
+                  >Socials</a
+                >
               </div>
             </div>
             <div class="flex items-center">
@@ -72,30 +78,31 @@
           Software Engineer and Full Stack Developer<br />
         </h1>
         <h2 class="pl-16 text-lg">
-          JavaScript, Tailwind, CSS, HTML, FireBase, React
+          JavaScript, Tailwind, Python, FireBase, React, Node JS
         </h2>
       </div>
+
+      <!-- ABOUT ME -->
       <div id="aboutMeID" class="aboutMe">
         <h1 class="text-3xl text-left pb-3">About Me</h1>
         <h3 class="text-left">
           Hi! This is my personal portfolio I designed using a mixture of
-          Three.js, Tailwind and JavaScript. Im currently a Senior studying
-          cognitive science. During my free time I like to create website
-          applications and participate in fitness. After I graduate I hope to
+          JavaScript, React, Three.js and Tailwind. Im currently studying
+          Mechanical Engineering at the University at Buffalo entering into my
+          senior year. During my free time I like to create web applications,
+          work on my coding skills, and work out. After I graduate I hope to
           pursue software development full time.
         </h3>
       </div>
+
+      <!-- PROJECTS EXPLAIN -->
       <div id="projectsID" class="projects inline-block">
         <h1 class="text-3xl text-left pb-5">Projects</h1>
-        <a href="https://github.com/WinstonChaan" class="text-lg">
-          Github.com/WinstonChaan</a
-        >
-        <br />
-        These are some of the projects I've built on the side. My priority when
+        These are some of the projects I've built for fun. My priority when
         choosing a project is being able to find something that I could
         implement in my life. I like creating projects that have actual purpose
-        and something I could use on the day-to-day. As a result I can
-        experience the application from a users perspective and implement
+        and something I could use on the day-to-day. Doing this allows me to
+        experience the application from a user perspective and implement
         features I think are lacking. These projects have been a good
         opportunity for me to learn the several stacks out there as well as push
         my limits while creating something fun and interactive!
@@ -127,7 +134,7 @@
           <h1 class="text-center pt-3">Live Messenger</h1>
           <a href="https://message-ccea8.web.app/">
             <img
-              class="object-contain w-full h-full p-7"
+              class="object-contain w-full h-96 p-7"
               src="pics/livemessenger.png"
             />
           </a>
@@ -137,13 +144,19 @@
       <!-- WORK EXPERIENCE -->
       <div id="workExperienceID" class="workExperience inline-block">
         <h1 class="text-3xl text-left pb-5">Work Experience</h1>
-        <a href="https://www.linkedin.com/in/winstonchan5" class="text-lg">
-          Linkedin.com/in/winstonchan5</a
-        >
+        <a> Strive Tech </a>
         <br />
-        Strive Tech
-        <br />
-        - Software Engineer | May '22 - Present
+        Software Engineer | May '22 - Present
+      </div>
+
+      <!-- SOCIALS -->
+      <div id="socialsID" class="socials inline-block">
+        <a href="https://www.linkedin.com/in/winstonchan5">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/WinstonChaan">
+          <i class="fa-brands fa-github-square fa-2x"></i>
+        </a>
       </div>
     </main>
     <script type="module" src="/main.js"></script>

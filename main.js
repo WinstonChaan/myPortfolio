@@ -19,7 +19,7 @@ const renderer = new THREE.WebGL1Renderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene, camera);
-renderer.setClearColor(0x3670c7, 1);
+renderer.setClearColor(0x808080, 1);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
