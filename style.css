@@ -41,6 +41,7 @@ main {
   color: black;
   margin-left: 4rem;
   margin-right: 4rem;
+  max-width: 43%;
 }
 
 .projects {
@@ -58,7 +59,7 @@ main {
 }
 
 .projectList {
-  margin-top: 2rem;
+  margin-top: 7rem;
   max-width: 43%;
   margin-right: 4rem;
 }
